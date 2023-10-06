@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jadwal UTS</title>
+    <link rel="icon" href="./img/logo.png" />
+
+    <!-- Box Icons Start -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Box Icons End -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Design Start -->
+    <header class="header">
+      <h1 class="logo">KELAS <span class="multiple-text"></span></h1>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#timetable"><i class="bx bxs-time"></i> Jadwal</a>
+      </nav>
+    </header>
+    <!-- Header Design End -->
+
+    <!-- Timetable Section Start -->
+    <section class="timetable" id="timetable">
+      <h1 class="timetable">JADWAL <span> UTS</span></h1>
+      <button class="toggle-button"><b>SENIN</b></button>
+      <div class="hidden-element" id="senin">
+        <p><b>MATA KULIAH</b> : Fisika Dasar</p>
+        <p><b>RUANG</b> : 12.1.09</p>
+        <p><b>WAKTU</b> : 08:00 - 09:40 WIB</p>
+        <p><b>DOSEN</b> : Tim Dosen</p>
+      </div>
+      <button class="toggle-button"><b>SELASA</b></button>
+      <div class="hidden-element" id="selasa">
+        <p><b>MATA KULIAH</b> : Kalkulus Diferensial</p>
+        <p><b>RUANG</b> : 12.1.09</p>
+        <p><b>WAKTU</b> : 08:00 - 09:40 WIB</p>
+        <p><b>DOSEN</b> : Nice Rejoice Refisis, S.Pd., M.Si.</p>
+        <!-- PEMBATAS  -->
+        <div class="second-matkul">
+          <p><b id="biru">MATA KULIAH</b> : Algoritma dan Pemrograman</p>
+          <p><b id="biru">RUANG</b> : 77.1.01</p>
+          <p><b id="biru">WAKTU</b> : 14:00 - 15:40 WIB</p>
+          <p><b id="biru">DOSEN</b> : SIA/SRI</p>
+        </div>
+      </div>
+      <button class="toggle-button"><b>RABU</b></button>
+      <div class="hidden-element" id="rabu">
+        <p><b>MATA KULIAH</b> : Logika Informatika</p>
+        <p><b>RUANG</b> : 12.1.12</p>
+        <p><b>WAKTU</b> : 08:00 - 09:40 WIB</p>
+        <p><b>DOSEN</b> : HSY/FAN</p>
+      </div>
+      <button class="toggle-button"><b>KAMIS</b></button>
+      <div class="hidden-element" id="kamis">
+        <p><b>MATA KULIAH</b> : Matematika Dasar</p>
+        <p><b>RUANG</b> : 12.1.09</p>
+        <p><b>WAKTU</b> : 08:00 - 09:40 WIB</p>
+        <p><b>DOSEN</b> : TAH/SNA</p>
+        <!-- PEMBATAS  -->
+        <div class="second-matkul">
+          <p><b id="biru">MATA KULIAH</b> : Bahasa Inggris</p>
+          <p><b id="biru">RUANG</b> : 77.3.01</p>
+          <p><b id="biru">WAKTU</b> : 14:00 - 15:40 WIB</p>
+          <p><b id="biru">DOSEN</b> : MMS</p>
+        </div>
+      </div>
+      <!-- PEMBATAS  -->
+      <button class="toggle-button"><b>JUMAT</b></button>
+      <div class="hidden-element" id="jumat">
+        <p><b>MATA KULIAH</b> : Teknologi Informasi dan Literasi Data</p>
+        <p><b>RUANG</b> : 12.1.12</p>
+        <p><b>WAKTU</b> : 14:00 - 15:40 WIB</p>
+        <p><b>DOSEN</b> : ZUI</p>
+      </div>
+    </section>
+    <!-- Timetable Section End -->
+
+    <!-- Timetable Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>
+          Dibuat Oleh
+          <a href="http://wa.me/6281260426431/?text=hai"
+            ><span><b>Riyan Wardhana </b></span>
+          </a>
+          | &copy; 2023
+        </p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-chevrons-up"></i></a>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Type Js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

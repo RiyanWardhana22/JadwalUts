@@ -1,0 +1,413 @@
+/* :root {
+  --bg: #1b2631;
+  --second-bg-color: #2e4053;
+  --text-color: #fff;
+  --main-color: #37f3ff;
+} */
+
+:root {
+  --bg: #02250f;
+  --second-bg-color: #116a2d;
+  --text-color: #fff;
+  --main-color: #2ecc71;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-color);
+}
+
+section {
+  min-height: 85vh;
+  padding: 10rem 9% 2rem;
+}
+
+/* Navbar */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--main-color);
+  z-index: 100;
+}
+
+.header h1 span {
+  color: var(--main-color);
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a::after {
+  content: "";
+  left: 10%;
+  width: 30%;
+  color: var(--main-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid;
+  transform: scaleX(1);
+  transition: 0.2s linear;
+}
+
+/* Hero Section */
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+  cursor: pointer;
+}
+
+/* Question Section Start */
+.timetable {
+  background-color: var(--second-bg-color);
+}
+
+.timetable h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  text-shadow: black 5px 5px 10px;
+}
+
+.timetable span {
+  color: var(--main-color);
+}
+
+.toggle-button {
+  width: 80vw;
+  height: 70px;
+  font-size: 16px;
+  background-color: var(--text-color);
+  color: var(--bg);
+  border: 3px solid var(--main-color);
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: var(--main-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.toggle-button:active {
+  background-color: var(--main-color);
+}
+
+.hidden-element {
+  height: 0;
+  width: 172vh;
+  padding: 0;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  color: black;
+  font-size: 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-align: left;
+  transition: height 0.5s ease;
+}
+
+.hidden-element p {
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+.second-matkul {
+  margin-top: 3rem;
+}
+
+#biru {
+  color: #0eab3e;
+}
+
+/* Max Height Start */
+#senin {
+  max-height: 140px;
+}
+
+#selasa {
+  max-height: 260px;
+}
+
+#rabu {
+  max-height: 140px;
+}
+
+#kamis {
+  max-height: 260px;
+}
+
+#jumat {
+  max-height: 140px;
+}
+/* Max Height End */
+
+/* Footer Section */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--bg);
+}
+
+.footer-text {
+  font-size: 1.8rem;
+}
+
+.footer a {
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+.footer span {
+  color: var(--main-color);
+}
+
+.footer .footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background: var(--main-color);
+  border-radius: 0.8rem;
+  transition: 0.3s ease;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop i {
+  font-size: 2.4rem;
+  color: var(--second-bg-color);
+}
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+
+  section {
+    padding: 10rem 3% 2rem;
+  }
+
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  #menu-icon {
+    display: inline-block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .about img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+
+  .about-content h2 {
+    text-align: center;
+  }
+
+  .timetable h1 {
+    padding-top: 5rem;
+  }
+
+  .hero .content h1 {
+    margin-left: 8rem;
+    font-size: 2.8rem;
+  }
+
+  .hero .content h3 {
+    margin-left: -2rem;
+    font-size: 3rem;
+    width: 118%;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .about img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+
+  .navbar a {
+    font-size: 2rem;
+  }
+
+  .toggle-button {
+    margin-left: 3.5rem;
+    padding: 15px 65px;
+    font-size: 14px;
+  }
+
+  .toggle-button b {
+    font-size: 2rem;
+  }
+
+  .hidden-element {
+    margin-left: 3.5rem;
+    width: 85%;
+    font-size: 13px;
+    text-align: left;
+  }
+
+  #senin {
+    max-height: 120px;
+  }
+
+  #selasa {
+    max-height: 230px;
+  }
+
+  #rabu {
+    max-height: 120px;
+  }
+
+  #kamis {
+    max-height: 230px;
+  }
+
+  #jumat {
+    max-height: 120px;
+  }
+
+  .slide img {
+    height: 260px;
+  }
+
+  .update p {
+    font-size: 1.5rem;
+  }
+
+  .footer p {
+    font-size: small;
+    padding-left: 2.5rem;
+  }
+
+  .footer .footer-iconTop a {
+    margin-right: 2.5vh;
+  }
+
+  @media (max-width: 617px) {
+    .toggle-button {
+      padding: 1.5rem 2rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+
+    .hero .content h1 {
+      text-align: center;
+      margin-left: 1cm;
+      font-size: 2.5rem;
+      width: 80%;
+    }
+
+    .hero .content h3 {
+      text-align: center;
+      margin-left: 1rem;
+      font-size: 2.4rem;
+      width: 110%;
+    }
+  }
+  @media (max-width: 365px) {
+    html {
+      font-size: 50%;
+    }
+
+    .hero .content h1 {
+      font-size: 2.5rem;
+      width: 90%;
+    }
+
+    #senin {
+      max-height: 120px;
+    }
+
+    #selasa {
+      max-height: 250px;
+    }
+  }
+}
